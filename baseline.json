@@ -1,0 +1,21 @@
+{
+"errors": [],
+
+"results": [ 
+{
+"code": "183 curs.execute(\n184 \"insert into taskManager_file ('name','path','project_id') values ('%s','%s',%s)\" %\n185 (name, upload_path, project_id))\n186 \n",
+"filename": "./taskManager/views.py",
+"issue_confidence": "MEDIUM",
+"issue_severity": "MEDIUM",
+"issue_text": "Possible SQL injection vector through string-based query construction.",
+"line_number": 184,
+"line_range": [
+184,
+185
+],
+"more_info": "https://bandit.readthedocs.io/en/latest/plugins/b608_hardcoded_sql_expressions.html",
+"test_id": "B608",
+"test_name": "hardcoded_sql_expressions"
+}
+]
+}
